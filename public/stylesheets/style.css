@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
 body {
   margin: 0%;
   padding: 50px;
@@ -6,7 +8,9 @@ body {
     to bottom,
     rgb(207 237 244 / 50%),
     rgb(113 187 200 / 88%)
-  )
+  );
+  font-family: 'Dosis';
+  font-weight: 200;
 }
 
 h1 {
@@ -15,18 +19,24 @@ h1 {
   color: rgba(255, 255, 255, 0.934);
 }
 
-  hr {
+hr {
     border: none;
     border-top: 4px solid white;
     margin: -5% 0% 0% 0%;
     max-width: 41%;
 }
 
+.secondLine {
+  border: none;
+  border-top: 4px solid white;
+  margin: 3% 0% 0% 0%;
+  max-width: 29%;
+}
 
 a {
   color: black;
 }
 
 footer{
-  margin-top: 75%;
+  margin-top: 65%;
 }
