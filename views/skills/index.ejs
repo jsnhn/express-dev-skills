@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Skills</title>
-</head>
-<body>
+<%- include('../partials/header') %>
     <h1>Skills</h1>
     <ul>
       <% skill.forEach(function(t) { %>
@@ -13,9 +6,7 @@
           <a href="/skills/<%= t.id %>">
             <%= t.skill %>
           </a>
-          
         </li>
       <% }); %>
     </ul>
-  </body>
-</html>
+<%- include('../partials/footer') %>
