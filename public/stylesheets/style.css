@@ -1,8 +1,32 @@
 body {
+  margin: 0%;
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(207 237 244 / 50%),
+    rgb(113 187 200 / 88%)
+  )
 }
 
+h1 {
+  font-size: 80px;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.934);
+}
+
+  hr {
+    border: none;
+    border-top: 4px solid white;
+    margin: -5% 0% 0% 0%;
+    max-width: 41%;
+}
+
+
 a {
-  color: #00B7FF;
+  color: black;
+}
+
+footer{
+  margin-top: 75%;
 }
