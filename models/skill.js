@@ -6,7 +6,8 @@ const skills = [
   
   module.exports = {
     getAll,
-    getOne
+    getOne,
+    create
   };
   
   function getAll() {
@@ -19,4 +20,9 @@ const skills = [
     // The Array.prototype.find iterator method is
     // ideal for finding an object within an array
     return skills.find(skill => skill.id === id);
+  }
+
+  function create(skill) {
+    skill.id = Date.now() % 1000000;
+    skills.push(skill)
   }
