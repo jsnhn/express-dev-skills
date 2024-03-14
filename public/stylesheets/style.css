@@ -53,3 +53,16 @@ h3 {
   color: white;
   font-weight: 200;
 }
+
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+	
+.delete-form button {
+  color: red;
+}
+	
+li {
+  list-style: none;
+}

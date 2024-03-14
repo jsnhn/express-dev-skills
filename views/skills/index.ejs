@@ -2,10 +2,14 @@
     <h1>Skills as of <%= time %></h1>
     <hr class="skillLine">
     <ul>
-      <% skill.forEach(function(t) { %>
+      <% skills.forEach(function(skill) { %>
         <li>
-          <a href="/skills/<%= t.id %>">
-            <%= t.skill %>
+          <form action="/skills/<%= skill.id %>?_method=DELETE"
+            class="delete-form" method="POST">
+            <button type="submit">Remove</button>
+          </form>
+          <a href="/skills/<%= skill.id %>">
+            <%= skill.skill %>
           </a>
         </li>
       <% }); %>
